@@ -53,9 +53,8 @@ lemma word_similar_star {A B : Matrix k k α} {U : Matrix.unitaryGroup k α} (W 
     rw [Word.apply_nil, mul_one, List.map_nil, List.prod_nil, Matrix.mul_eq_one_comm,
       unitary.star_mul_self_of_mem U.prop]
   | cons nm w hw =>
-    rw [List.map_cons, List.prod_cons]
-    dsimp at ⊢ hw
-    rw [hw, mul_assoc, mul_assoc (U.val) _ (star U.val), ← mul_assoc (star U.val) (U.val),
+    rw [List.map_cons, List.prod_cons, Word.apply_cons, hw, mul_assoc,
+      mul_assoc (U.val) _ (star U.val), ← mul_assoc (star U.val) (U.val),
       unitary.star_mul_self_of_mem U.prop, one_mul]
     group
 
