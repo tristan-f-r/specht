@@ -1,6 +1,6 @@
 # Specht's theorem
 
-a formalization of [Specht's theorem](https://en.wikipedia.org/wiki/Specht%27s_theorem) in
+a (WIP) formalization of [Specht's theorem](https://en.wikipedia.org/wiki/Specht%27s_theorem) in
 [lean4](https://lean-lang.org/).
 
 Lemmas are formalized from _Matrix Analysis_ by Roger Horn and Charles Johnson.
